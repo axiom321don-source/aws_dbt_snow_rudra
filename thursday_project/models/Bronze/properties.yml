@@ -1,0 +1,111 @@
+
+version: 2
+
+sources:
+  - name: source
+    database: AIRBNB
+    schema: SOURCE
+
+    tables:
+
+      
+      - name: BOOKINGS
+        columns:
+          - name: BOOKING_ID
+            data_tests:
+              - not_null
+              - unique
+
+          - name: LISTING_ID
+            data_tests:
+              - not_null
+              - relationships:
+                  arguments:
+                    to: source('source', 'LISTINGS')
+                    field: LISTING_ID
+
+          - name: BOOKING_DATE
+            data_tests:
+              - not_null
+
+          - name: NIGHTS_BOOKED
+            data_tests:
+              - not_null
+
+          - name: BOOKING_AMOUNT
+            data_tests:
+              - not_null
+
+          - name: BOOKING_STATUS
+            data_tests:
+              - not_null
+              - accepted_values:
+                  arguments:
+                    values:
+                      - confirmed
+                      - cancelled
+                      - completed
+
+      
+      - name: HOSTS
+        columns:
+          - name: HOST_ID
+            data_tests:
+              - not_null
+              - unique
+
+          - name: HOST_SINCE
+            data_tests:
+              - not_null
+
+          - name: IS_SUPERHOST
+            data_tests:
+              - not_null
+              - accepted_values:
+                  arguments:
+                    values: [true, false]
+
+          - name: RESPONSE_RATE
+            data_tests:
+              - not_null
+
+   
+      - name: LISTINGS
+        columns:
+          - name: LISTING_ID
+            data_tests:
+              - not_null
+              - unique
+
+          - name: HOST_ID
+            data_tests:
+              - not_null
+              - relationships:
+                  arguments:
+                    to: source('source', 'HOSTS')
+                    field: HOST_ID
+
+          - name: PROPERTY_TYPE
+            data_tests:
+              - not_null
+
+          - name: ROOM_TYPE
+            data_tests:
+              - not_null
+
+          - name: CITY
+            data_tests:
+              - not_null
+
+          - name: COUNTRY
+            data_tests:
+              - not_null
+
+          - name: ACCOMMODATES
+            data_tests:
+              - not_null
+
+          - name: PRICE_PER_NIGHT
+            data_tests:
+              - not_null
+

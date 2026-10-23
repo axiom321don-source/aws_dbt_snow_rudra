@@ -1,0 +1,8 @@
+sources:
+  - name: source
+    database: AIRBNB
+    schema: SOURCE
+    tables:
+      - name: bookings
+      - name: hosts
+      - name: listings

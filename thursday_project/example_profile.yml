@@ -1,0 +1,13 @@
+thursday_project:
+  outputs:
+    dev:
+      account: FDNKELE-JE82618
+      database: AIRBNB
+      password: Rudrasnowsnow1
+      role: ACCOUNTADMIN
+      schema: dbt_schema
+      threads: 1
+      type: snowflake
+      user: rudrasnow
+      warehouse: COMPUTE_WH
+  target: dev

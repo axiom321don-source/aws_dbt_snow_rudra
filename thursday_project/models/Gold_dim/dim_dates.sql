@@ -1,0 +1,32 @@
+
+{{
+    config(
+        materialized='table',
+        schema='gold_dim'
+    )
+}}
+
+SELECT DISTINCT
+    TO_NUMBER(
+        TO_CHAR(CAST(BOOKING_DATE AS DATE), 'YYYYMMDD')
+    ) AS DATE_KEY,
+
+    CAST(BOOKING_DATE AS DATE) AS FULL_DATE,
+
+    DAY(CAST(BOOKING_DATE AS DATE)) AS BOOKING_DAY,
+
+    MONTHNAME(CAST(BOOKING_DATE AS DATE))
+        AS BOOKING_MONTH,
+
+    YEAR(CAST(BOOKING_DATE AS DATE))
+        AS BOOKING_YEAR,
+
+    QUARTER(CAST(BOOKING_DATE AS DATE))
+        AS QUARTER_NUMBER,
+
+    'Q' || QUARTER(CAST(BOOKING_DATE AS DATE))
+        AS QUARTER_NAME
+
+FROM {{ ref('gold_bookings') }}
+
+WHERE BOOKING_DATE IS NOT NULL

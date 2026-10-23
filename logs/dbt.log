@@ -1,0 +1,148 @@
+[0m14:44:54.890175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C88DE0A510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8903F3D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8903F39D0>]}
+
+
+============================== 14:44:54.906281 | 3cecb25d-a294-47eb-80da-a2c73b9f9758 ==============================
+[0m14:44:54.906281 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:44:54.909104 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Rudra\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init', 'log_path': 'logs'}
+[0m15:21:12.620686 [debug] [MainThread]: Starter project path: C:\Users\Rudra\Desktop\aws_dbt_snowflake\.venv\Lib\site-packages\dbt\include\starter_project
+[0m15:21:12.753524 [info ] [MainThread]: Setting up your profile.
+[0m15:21:19.526166 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m15:21:19.527501 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m15:21:19.528350 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:28:46.121954 [info ] [MainThread]: Profile thursday_project written to C:\Users\Rudra\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m15:28:46.399660 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m15:28:46.407007 [info ] [MainThread]: dbt version: 1.12.5
+[0m15:28:46.408560 [info ] [MainThread]: python version: 3.13.5
+[0m15:28:46.410330 [info ] [MainThread]: python path: C:\Users\Rudra\Desktop\aws_dbt_snowflake\.venv\Scripts\python.exe
+[0m15:28:46.413696 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m15:28:46.779601 [info ] [MainThread]: Using profiles dir at C:\Users\Rudra\.dbt
+[0m15:28:46.780944 [info ] [MainThread]: Using profiles.yml file at C:\Users\Rudra\.dbt\profiles.yml
+[0m15:28:46.782252 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Rudra\Desktop\aws_dbt_snowflake\thursday_project\dbt_project.yml
+[0m15:28:46.786565 [info ] [MainThread]: adapter type: snowflake
+[0m15:28:46.787872 [info ] [MainThread]: adapter version: 1.12.1
+[0m15:28:47.272591 [info ] [MainThread]: Configuration:
+[0m15:28:47.277339 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:28:47.284818 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:28:47.289633 [info ] [MainThread]: Required dependencies:
+[0m15:28:47.293222 [debug] [MainThread]: Executing "git --help"
+[0m15:28:47.520439 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:28:47.523614 [debug] [MainThread]: STDERR: "b''"
+[0m15:28:47.525738 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:28:47.527828 [info ] [MainThread]: Connection:
+[0m15:28:47.529862 [info ] [MainThread]:   account: FDNKELE-JE82618
+[0m15:28:47.531914 [info ] [MainThread]:   user: rudrasnow
+[0m15:28:47.533949 [info ] [MainThread]:   database: AIRBNB
+[0m15:28:47.535749 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m15:28:47.537266 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m15:28:47.538690 [info ] [MainThread]:   schema: dbt_schema
+[0m15:28:47.540458 [info ] [MainThread]:   authenticator: None
+[0m15:28:47.542024 [info ] [MainThread]:   oauth_client_id: None
+[0m15:28:47.544306 [info ] [MainThread]:   query_tag: None
+[0m15:28:47.547048 [info ] [MainThread]:   client_session_keep_alive: False
+[0m15:28:47.549313 [info ] [MainThread]:   host: None
+[0m15:28:47.552232 [info ] [MainThread]:   port: None
+[0m15:28:47.558146 [info ] [MainThread]:   proxy_host: None
+[0m15:28:47.562066 [info ] [MainThread]:   proxy_port: None
+[0m15:28:47.564153 [info ] [MainThread]:   protocol: None
+[0m15:28:47.566147 [info ] [MainThread]:   connect_retries: 1
+[0m15:28:47.570899 [info ] [MainThread]:   connect_timeout: None
+[0m15:28:47.573898 [info ] [MainThread]:   retry_on_database_errors: False
+[0m15:28:47.576545 [info ] [MainThread]:   retry_all: False
+[0m15:28:47.579063 [info ] [MainThread]:   insecure_mode: False
+[0m15:28:47.584023 [info ] [MainThread]:   reuse_connections: True
+[0m15:28:47.590434 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m15:28:47.595852 [info ] [MainThread]:   workload_identity_provider: None
+[0m15:28:47.600966 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m15:28:47.605971 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m15:28:47.617150 [info ] [MainThread]: Registered adapter: snowflake=1.12.1
+[0m15:28:54.000142 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m15:28:54.070366 [debug] [MainThread]: Using snowflake connection "debug"
+[0m15:28:54.071814 [debug] [MainThread]: On debug: select 1 as id
+[0m15:28:54.073242 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:28:55.585358 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.512 seconds
+[0m15:28:55.588105 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:28:55.590052 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:28:55.593057 [info ] [MainThread]: Your new dbt project "thursday_project" was created!
+Initialized new project in C:\Users\Rudra\Desktop\aws_dbt_snowflake\thursday_project\thursday_project
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:28:55.601922 [debug] [MainThread]: Command `dbt init` succeeded at 15:28:55.599641 after 2641.12 seconds
+[0m15:28:55.604270 [debug] [MainThread]: Connection 'debug' was left open.
+[0m15:28:55.606307 [debug] [MainThread]: On debug: Close
+[0m15:28:55.864627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C891B29BA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C8902B27B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C891F3BF00>]}
+[0m15:28:55.868122 [debug] [MainThread]: Flushing usage events
+[0m15:28:58.356870 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:07:01.764440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC50AA510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC77079D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC7707ED0>]}
+
+
+============================== 23:07:01.784964 | 6964b69c-19a1-4057-b260-15de22478355 ==============================
+[0m23:07:01.784964 [info ] [MainThread]: Running with dbt=1.12.5
+[0m23:07:01.787337 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Rudra\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt build', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m23:07:01.789513 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Rudra\Desktop\aws_dbt_snowflake\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:07:01.792429 [debug] [MainThread]: Command `dbt build` failed at 23:07:01.791927 after 0.83 seconds
+[0m23:07:01.793866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC7716190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC76A27B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013AC770BDF0>]}
+[0m23:07:01.795122 [debug] [MainThread]: Flushing usage events
+[0m23:07:04.343671 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:48:07.470273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188BB68A510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188BDCF7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188BDCF7B10>]}
+
+
+============================== 17:48:07.483838 | 24e1c7f8-5638-43e4-a353-1ce100f6eae6 ==============================
+[0m17:48:07.483838 [info ] [MainThread]: Running with dbt=1.12.5
+[0m17:48:07.485484 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Rudra\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select Bronze --full-refresh', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m17:48:07.486776 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Rudra\Desktop\aws_dbt_snowflake\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:48:07.489039 [debug] [MainThread]: Command `dbt run` failed at 17:48:07.488696 after 0.67 seconds
+[0m17:48:07.489998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188BDD06190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188BDC8E7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188BDCF3DF0>]}
+[0m17:48:07.490893 [debug] [MainThread]: Flushing usage events
+[0m17:48:09.991610 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:38:44.829820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E073A510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E2DA7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E2DA7B10>]}
+
+
+============================== 01:38:44.844610 | ad9b9947-451e-40da-afbe-76d8c17b0b0c ==============================
+[0m01:38:44.844610 [info ] [MainThread]: Running with dbt=1.12.5
+[0m01:38:44.846777 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Rudra\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt build', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m01:38:44.850007 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Rudra\Desktop\aws_dbt_snowflake\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:38:44.855138 [debug] [MainThread]: Command `dbt build` failed at 01:38:44.854508 after 0.43 seconds
+[0m01:38:44.856913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E2DB6190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E2D3E7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0E2DABDF0>]}
+[0m01:38:44.859387 [debug] [MainThread]: Flushing usage events
+[0m01:38:47.228273 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:42:04.630982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E44E40A510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4509F3D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4509F39D0>]}
+
+
+============================== 13:42:04.640917 | 81e054a3-30f8-40be-897c-4f6bf1646eb6 ==============================
+[0m13:42:04.640917 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:42:04.642505 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Rudra\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt deps', 'log_path': 'logs'}
+[0m13:42:04.644039 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\Rudra\Desktop\aws_dbt_snowflake\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:42:04.645873 [debug] [MainThread]: Command `dbt deps` failed at 13:42:04.645597 after 0.43 seconds
+[0m13:42:04.646755 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E450A395B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4508B29F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E450A42030>]}
+[0m13:42:04.647726 [debug] [MainThread]: Flushing usage events
+[0m13:42:06.947491 [debug] [MainThread]: An error was encountered while trying to flush usage events

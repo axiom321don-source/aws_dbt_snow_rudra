@@ -1,0 +1,35 @@
+
+name: 'thursday_project'
+version: '1.0.0'
+
+profile: 'thursday_project'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  thursday_project:
+
+    Bronze:
+      +materialized: table
+      +schema: bronze
+
+    Silver:
+      +materialized: table
+      +schema: silver
+
+    Gold:
+      +materialized: table
+      +schema: gold
+
+    Gold_dim:
+      +materialized: table
+      +schema: gold_dim
